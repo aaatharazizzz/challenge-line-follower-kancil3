@@ -7,8 +7,8 @@ from pybricks.parameters import Port, Direction
 from pybricks.robotics import DriveBase
 
 hub = InventorHub()
-left = Motor(Port.A, Direction.COUNTERCLOCKWISE)
-right = Motor(Port.B, Direction.CLOCKWISE)
+left = Motor(Port.E, Direction.COUNTERCLOCKWISE)
+right = Motor(Port.F, Direction.CLOCKWISE)
 sensor = ColorSensor(Port.D)
 
 # Ganti dengan hasil kalibrasi robot kalian sendiri,
