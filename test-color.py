@@ -5,20 +5,7 @@ from pybricks.tools import wait
 from pybricks.parameters import Color, Icon
 
 from perangkat import robot, color_sensor, hub, ultrasonic_sensor, color_sensor_motor
-
-# --- hasil pengukuran, ukur ulang dengan kalibrasi.py setiap ganti lintasan atau ruangan ---
-BLACK = 9
-WHITE = 85
-
-# --- setelan, setel satu per satu ---
-LOOP_MS = 10
-FLAG_DISTANCE_TRESHOLD = 90
-
-THRESHOLD = (BLACK + WHITE) / 2
-SCALE = 200 / (WHITE - BLACK)
-
-last_error = 0
-lost_time = 0
+from main import FLAG_DISTANCE_TRESHOLD
 
 # colorsensor mode: tracking 
 hub.display.icon(Icon.CIRCLE)
