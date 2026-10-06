@@ -11,7 +11,7 @@ left = Motor(Port.E, Direction.COUNTERCLOCKWISE)
 right = Motor(Port.F, Direction.CLOCKWISE)
 color_sensor = ColorSensor(Port.D)
 ultrasonic_sensor = UltrasonicSensor(Port.C)
-color_sensor_motor = Motor(Port.B)
+color_sensor_motor = Motor(Port.A)
 
 
 # Ganti dengan hasil kalibrasi robot kalian sendiri,
