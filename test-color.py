@@ -12,7 +12,7 @@ WHITE = 85
 
 # --- setelan, setel satu per satu ---
 LOOP_MS = 10
-FLAG_DISTANCE_TRESHOLD = 150
+FLAG_DISTANCE_TRESHOLD = 90
 
 THRESHOLD = (BLACK + WHITE) / 2
 SCALE = 200 / (WHITE - BLACK)
