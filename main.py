@@ -24,8 +24,10 @@ SEARCH_TURN_RATE = 120
 COLOR_SENSOR_FRONT_ANGLE = 0
 COLOR_SENSOR_DOWN_ANGLE = -90
 
-FLAG_DISTANCE_TRESHOLD = 80
-# PROPER_COLOR_WAIT_MS = 100
+FLAG_DISTANCE_TRESHOLD = 70
+# garis lebar 4.5cm / 45 mm
+TURN_ARC = 22
+PROPER_COLOR_WAIT_MS = 500
 # ---
 
 THRESHOLD = (BLACK + WHITE) / 2
@@ -60,17 +62,20 @@ while True:
             print("green")
             hub.display.icon(Icon.ARROW_RIGHT)
             hub.speaker.beep(500, 100)
-            robot.turn(90)
+            # robot.turn(90)
+            robot.arc(TURN_ARC, 90)
         elif color == Color.RED:
             print("red")
             hub.display.icon(Icon.ARROW_LEFT)
             hub.speaker.beep(1000, 200)
-            robot.turn(-90)
+            # robot.turn(-90)
+            robot.arc(-TURN_ARC, 90)
         elif color == Color.YELLOW:
             print("yellow")
             hub.display.char('Y')
             hub.speaker.beep(2000, 300)
-            robot.turn(-90)
+            # robot.turn(-90)
+            robot.arc(-TURN_ARC, 90)
         else:
             color_not_found = True
             hub.display.char('?')
